@@ -51,3 +51,5 @@ var avgOdd = numOdd.reduce(function(a, b) {
 	return a + b;
 }) / numOdd.length;
 console.log("Среднее значение нечётных чисел: " + avgOdd);
+
+/*END*/
