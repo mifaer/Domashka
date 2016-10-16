@@ -32,13 +32,21 @@ console.log("Преобразованые числа: " + numEvenOrOdd);
 var numEven = [];
 var numOdd = [];
 
-for (var i = 0; i < numEvenOrOdd.length; i++) {
-	if (numEvenOrOdd[i]%2==0) {
-		numEven.push(numEvenOrOdd[i]);
-	} else {
-		numOdd.push(numEvenOrOdd[i]);
-	}
-}
+// for (var i = 0; i < numEvenOrOdd.length; i++) {
+// 	if (numEvenOrOdd[i]%2==0) {
+// 		numEven.push(numEvenOrOdd[i]);
+// 	} else {
+// 		numOdd.push(numEvenOrOdd[i]);
+// 	}
+// }
+
+numEven = numEvenOrOdd.filter(function(n) {
+	return n%2 == 0;
+});
+numOdd = numEvenOrOdd.filter(function(n) {
+	return n%2 != 0;
+});
+
 console.log("Четные числа: " + numEven);
 console.log("Нечетные числа: " + numOdd);
 
