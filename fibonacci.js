@@ -47,6 +47,7 @@ numOdd = numEvenOrOdd.filter(function(n) {
 	return n%2 != 0;
 });
 
+
 console.log("Четные числа: " + numEven);
 console.log("Нечетные числа: " + numOdd);
 
